@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const task = document.querySelector("#new-task-description");
-  const form = document.querySelector("#create-task-form");
+  const taskForm = document.querySelector("#create-task-form");
   const list = document.querySelector("#tasks");
   // const priority = document.querySelector("#new-task-priority");
-  form.addEventListener('submit', function(e) {
+  taskForm.addEventListener('submit', function(e) {
     e.preventDefault()
     const newTask = task.value 
     const newList = document.createElement('li')
